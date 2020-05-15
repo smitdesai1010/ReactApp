@@ -77,6 +77,7 @@ class Game extends React.Component {
      }
   }
 
+
   render() {
 
     const history = this.state.history;
@@ -100,7 +101,7 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <div>{status}</div>
-          <ol>{/* TODO */}</ol>
+          <ol>{ }</ol>
         </div>
       </div>
     );
