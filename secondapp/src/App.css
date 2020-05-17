@@ -7,12 +7,13 @@
   margin-top: 50px;
   margin-left: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 130px;
 }
 
 .line{
   height: 15px;
-  width: 130px;
+  width: 100%;
   display: flex;
 }
 
@@ -33,4 +34,13 @@
   padding: 0;
   height: 100%;
   width: 15%;
+}
+
+.content{
+  box-sizing: border-box;
+  border: solid black 1px;
+  margin-top: -1px;
+  font-size: 0.5rem;
+  height: 80px;
+  //display: none;
 }
