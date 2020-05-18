@@ -8,16 +8,16 @@ class App extends React.Component{
 
 constructor(props){
   super(props);
-  this.state = {showinfo : 'none'};
+  this.state = {show : '-80px'};
 }
 
  onclick= () => {
-   var display = 'block'
+   var display = '0px'
 
-   if (this.state.showinfo === 'block')
-    display = 'none';
+   if (this.state.show === '0px')
+    display = '-80px';
 
-   this.setState({showinfo : display });
+   this.setState({show : display });
  }
 
  render(){
@@ -28,7 +28,7 @@ constructor(props){
         <Button className='btn' onclick={this.onclick}/>
        </div>
 
-       <Content className='content' showinfo={this.state.showinfo} content='ABC'/>
+       <Content className='content' show={this.state.show} content='ABC'/>
       </div>
     )
  }

@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   width: 130px;
+  overflow: hidden;
 }
 
 .line{
@@ -34,12 +35,19 @@
   padding: 0;
   height: 100%;
   width: 15%;
+  border: solid black 1px;
+  border-left: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .content{
   box-sizing: border-box;
   border: solid black 1px;
-  margin-top: -1px;
+  border-top: 0px;
   font-size: 0.5rem;
   height: 80px;
+  pointer-events: none;
+  transform: translateY(-80px);
+  transition: all 1s;
 }
